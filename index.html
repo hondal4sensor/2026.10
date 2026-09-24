@@ -130,6 +130,7 @@
    .squares {
         display: flex;
         gap: 10px;
+      　margin-bottom: 30px;
    }
 
    .squares span {
@@ -140,6 +141,13 @@
 
    .squares .red {
       border: 3px solid red;
+   }
+   .space {
+        margin-right: 50px;
+   }
+   .big {
+     width: 120px !important;
+     height: 120px !important;
    }
 </style>
 </head>
@@ -172,8 +180,7 @@
            </div>
           <input
               type="text"
-              id="q1"
-              placeholder="答えを入力"
+               name="q1"
              >
         </div>
 
@@ -181,19 +188,19 @@
         <!-- Q2 -->
         <div class="question">
             <h2>2. </h2>
-           <h2 style="font-size: 24px;"> SOTIF ISO</h2>
-
-            <div class="squares">
-              <span></span>
-              <span></span>
-              <span class="red"></span>
-              <span></span>
-              <span></span>
-           </div>
+            <h2 style="font-size: 24px;"> SOTIF</h2>
+            <h2 style="font-size: 24px;"> ISO
+               <div class="squares">
+                 <span></span>
+                 <span></span>
+                 <span class="red"></span>
+                 <span></span>
+                 <span></span>
+              </div>
+            </h2>
           <input
               type="text"
-              id="q1"
-              placeholder="答えを入力"
+              name="q2"
              >
         </div>
 
@@ -221,7 +228,7 @@
             </label>
 
             <label>
-                <input type="radio" name="q3" value="D">
+                <input type="radio" name="q3" value="S">
                 D. 山
             </label>
         </div>
@@ -233,7 +240,7 @@
             <h2 style="font-size: 24px;"> ピーポーピーポー</h2>
 
            <div class="squares">
-              
+              <span class="red"></span>
               <span></span>
               <span></span>
               <h2 style="font-size: 24px;"> Hz/</h2>
@@ -270,111 +277,97 @@
 
         <!-- Q5 -->
         <div class="question">
-            <h2>Q5. LiDARを搭載した車両を上空から見ています。LiDARが検出している範囲として適切なのは？</h2>
+            <h2>5. </h2>
 
             <!-- あとで画像を変更 -->
             <img src="images/q5.jpg" alt="問題5の画像">
 
             <label>
-                <input type="radio" name="q5" value="A">
-                A. 車両の周囲
+                <input type="radio" name="q5" value="N">
+                N
             </label>
 
             <label>
-                <input type="radio" name="q5" value="B">
-                B. 車内のみ
+                <input type="radio" name="q5" value="E">
+                E
             </label>
 
             <label>
-                <input type="radio" name="q5" value="C">
-                C. 車両の後方のみ
+                <input type="radio" name="q5" value="W">
+                W
             </label>
 
             <label>
-                <input type="radio" name="q5" value="D">
-                D. 空のみ
+                <input type="radio" name="q5" value="S">
+                S
             </label>
         </div>
 
 
         <!-- Q6 -->
         <div class="question">
-            <h2>Q6. LiDARの特徴として適切なのは？</h2>
-
-            <label>
-                <input type="radio" name="q6" value="A">
-                A. 周囲の形状を立体的に捉えられる
-            </label>
-
-            <label>
-                <input type="radio" name="q6" value="B">
-                B. 必ず音を発生させる
-            </label>
-
-            <label>
-                <input type="radio" name="q6" value="C">
-                C. GPSそのものである
-            </label>
-
-            <label>
-                <input type="radio" name="q6" value="D">
-                D. タイヤの空気圧を測る装置である
-            </label>
+            <h2>6.</h2>
+            <h2>赤外線カメラで見えるのは</h2>
+            <div class="squares">
+              <span class="red"></span>
+           </div>
+         　<input
+              type="text"
+              name="q6"
+             >
         </div>
 
 
         <!-- Q7 -->
         <div class="question">
-            <h2>Q7. LiDARが周囲を計測するときに利用するものは？</h2>
-
-            <label>
-                <input type="radio" name="q7" value="A">
-                A. レーザー光
-            </label>
-
-            <label>
-                <input type="radio" name="q7" value="B">
-                B. 水
-            </label>
-
-            <label>
-                <input type="radio" name="q7" value="C">
-                C. 磁石
-            </label>
-
-            <label>
-                <input type="radio" name="q7" value="D">
-                D. エンジンオイル
-            </label>
+            <h2>7. </h2>
+            <h2>2n + 1</h2>
+            <h2>
+               <div class="squares">
+                 <span class="red"></span>
+                 <span></span>
+                 <span></span>
+              </div>
+               (アルファベット)</h2>
+            <input
+              type="text"
+              name="q7"
+             >
         </div>
 
 
         <!-- Q8 -->
         <div class="question">
-            <h2>Q8. 自動運転システムで複数のセンサーを組み合わせる主な理由は？</h2>
+            <h2>8. </h2>
 
-            <label>
-                <input type="radio" name="q8" value="A">
-                A. それぞれの特徴を補い合うため
-            </label>
+            <div class="squares">
+               <span class="big"></span>
+              <span></span>
+               <span class="space"></span>
+               
+              <span class="big"></span>
+               <span></span>
+               <span></span>
+               <span></span>
+              <span class="space red"></span>
 
-            <label>
-                <input type="radio" name="q8" value="B">
-                A. 車を軽くするため
-            </label>
+               <span></span>
+               <span></span>
 
-            <label>
-                <input type="radio" name="q8" value="C">
-                C. 燃料を増やすため
-            </label>
-
-            <label>
-                <input type="radio" name="q8" value="D">
-                D. タイヤを大きくするため
-            </label>
+               <span class="big"></span>
+               <span class="red"></span>
+              <span></span>
+               <span></span>
+               <span></span>
+            </div>
+           
+           <input
+              type="text"
+              name="q8"
+             >
         </div>
 
-
+      <h2>答えは共通の1文字 </h2>
         <button onclick="submitQuiz()">
             回答を提出する
         </button>
@@ -394,14 +387,14 @@
 // ==========================
 
 const answers = {
-    q1: "B",
-    q2: "A",
-    q3: "A",
-    q4: "A",
-    q5: "A",
-    q6: "A",
-    q7: "A",
-    q8: "A"
+    q1: "L",
+    q2: "4",
+    q3: "S",
+    q4: "E",
+    q5: "N",
+    q6: "s",
+    q7: "O",
+    q8: "R"
 };
 
 
@@ -437,15 +430,37 @@ function submitQuiz() {
 
     for (let i = 1; i <= 8; i++) {
 
+        // radio問題か確認
         const selected = document.querySelector(
             `input[name="q${i}"]:checked`
         );
 
-        if (selected && selected.value === answers[`q${i}`]) {
-            score++;
+        if (selected) {
+
+            // radioの場合
+            if (
+                selected.value.toLowerCase() ===
+                answers[`q${i}`].toLowerCase()
+            ) {
+                score++;
+            }
+
+        } else {
+
+            // text問題の場合
+            const input = document.querySelector(
+                `input[name="q${i}"][type="text"]`
+            );
+
+            if (
+                input &&
+                input.value.trim().toLowerCase() ===
+                answers[`q${i}`].toLowerCase()
+            ) {
+                score++;
+            }
         }
     }
-
 
     const result = document.getElementById("result");
 
