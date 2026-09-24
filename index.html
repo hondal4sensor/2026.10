@@ -130,13 +130,14 @@
    .squares {
         display: flex;
         gap: 10px;
-      　margin-bottom: 30px;
    }
 
    .squares span {
-        width: 80px;
-        height: 80px;
+          flex: 1;
+          aspect-ratio: 1 / 1;
+       　min-width: 0;
         border: 3px solid white;
+      box-sizing: border-box;
    }
 
    .squares .red {
@@ -146,8 +147,8 @@
         margin-right: 50px;
    }
    .big {
-     width: 120px !important;
-     height: 120px !important;
+     flex: 1.5;
+    aspect-ratio: 1 / 1;
    }
    @media (max-width: 600px) {
 
