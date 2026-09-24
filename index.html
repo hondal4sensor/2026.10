@@ -146,9 +146,10 @@
    .space {
         margin-right: 50px;
    }
-   .big {
-     flex: 1.5;
-    aspect-ratio: 1 / 1;
+   .squares .big {
+       width: clamp(40px, 10vw, 100px);
+       aspect-ratio: 1 / 1;
+       flex-shrink: 1;
    }
    @media (max-width: 600px) {
 
