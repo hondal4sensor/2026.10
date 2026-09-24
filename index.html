@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -127,17 +127,26 @@
     .failure {
         color: #ff4444;
     }
+   .squares {
+        display: flex;
+        gap: 10px;
+   }
+
+   .squares span {
+        width: 80px;
+        height: 80px;
+        border: 3px solid black;
+   }
+
+   .squares .red {
+      border: 3px solid red;
+   }
 </style>
 </head>
 
 <body>
 
 <div class="container">
-
-    <div class="subtitle">
-        AUTONOMOUS DRIVING SYSTEM
-    </div>
-
     <!-- 最初の画面 -->
     <div id="startScreen">
         <button onclick="startConfirmation()">
@@ -149,11 +158,17 @@
 
     <!-- クイズ -->
     <div id="quiz">
-
         <!-- Q1 -->
         <div class="question">
             <h2>1.</h2>
-            <img src="images/q1.png">
+           <img src="images/q1.png">
+           <div class="squares">
+              <span></span>
+              <span></span>
+              <span class="red"></span>
+              <span></span>
+              <span></span>
+           </div>
           <input
               type="text"
               id="q1"
@@ -478,4 +493,3 @@ function submitQuiz() {
 
 </body>
 </html>
-```
